@@ -44,3 +44,7 @@ Route::get('tacphamkd', [ViDuController::class, 'tacphamkd']);
 Route::get('baoquoc', function () {
     return 'Lê Bảo Quốc';
 });
+
+Route::get('vananh', function(){
+    return 'Nguyễn Trần Vân Anh';
+});
