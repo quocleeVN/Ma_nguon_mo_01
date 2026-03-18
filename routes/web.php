@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ViDuController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,4 +51,18 @@ Route::get('/baoquoc', function () {
 
 Route::get('/vananh2', function(){
     return "Nguyen Tran Van Anh";
+});
+Route::get('/quynhnhu',function(){
+    return "Nguyễn Võ Quỳnh Như";
+});
+use App\Http\Controllers\MovieController;
+
+Route::prefix('movies')->group(function () {
+    Route::get('/genres', [MovieController::class, 'genres']);
+    Route::get('/top-rated', [MovieController::class, 'topRated']);
+    Route::get('/top-budget', [MovieController::class, 'topBudget']);
+    Route::get('/long-movies', [MovieController::class, 'longMovies']);
+    Route::get('/canada-movies', [MovieController::class, 'canadaMovies']);
+    Route::get('/action-movies', [MovieController::class, 'actionMovies']);
+    Route::get('/popular-movies', [MovieController::class, 'popularMovies']);
 });
