@@ -52,6 +52,7 @@ Route::get('/baoquoc', function () {
 Route::get('/vananh2', function(){
     return "Nguyen Tran Van Anh";
 });
+
 Route::get('/quynhnhu',function(){
     return "Nguyễn Võ Quỳnh Như";
 });
@@ -65,4 +66,9 @@ Route::prefix('movies')->group(function () {
     Route::get('/canada-movies', [MovieController::class, 'canadaMovies']);
     Route::get('/action-movies', [MovieController::class, 'actionMovies']);
     Route::get('/popular-movies', [MovieController::class, 'popularMovies']);
+
+
+Route::get('quynhnhu', function(){
+    return 'Nguyễn Võ Quỳnh Như';
+
 });
