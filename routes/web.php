@@ -48,3 +48,7 @@ Route::get('/vananh', function () {
 Route::get('/baoquoc', function () {
     return "Bao Quoc";
 });
+
+Route::get('/vananh2', function(){
+    return "Nguyen Tran Van Anh";
+});
