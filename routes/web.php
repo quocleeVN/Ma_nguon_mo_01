@@ -52,3 +52,7 @@ Route::get('/baoquoc', function () {
 Route::get('/vananh2', function(){
     return "Nguyen Tran Van Anh";
 });
+
+Route::get('quynhnhu', function(){
+    return 'Nguyễn Võ Quỳnh Như';
+});
