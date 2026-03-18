@@ -40,3 +40,7 @@ Route::get('/sum', [ViDuController::class, 'sum']);
 
 //Các yêu cầu liên quan đến BOOKDB
 Route::get('tacphamkd', [ViDuController::class, 'tacphamkd']);
+
+Route::get('baoquoc', function () {
+    return 'Lê Bảo Quốc';
+});
