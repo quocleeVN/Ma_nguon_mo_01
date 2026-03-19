@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller_movie;
 use App\Http\Controllers\ViDuController;
 use Illuminate\Support\Facades\Route;
 
@@ -48,3 +49,26 @@ Route::get('/vananh', function () {
 Route::get('/baoquoc', function () {
     return "Bao Quoc";
 });
+
+//Thao tác với moviedb
+
+//Lấy danh sách thể loại phim
+Route::get('/7.1', [Controller_movie::class, 'ds_theloai']);
+
+//Lấy top 10 phim có lượt vote cao nhất
+Route::get('/7.2', [Controller_movie::class, 'topvote']);
+
+//Lấy top 10 phim có doanh thu cao nhat
+Route::get('/7.3', [Controller_movie::class, 'topbudget']);
+
+//Lấy 10 bộ phim có thời lượng lớn hơn 120p
+Route::get('/7.4', [Controller_movie::class, 'topruntime']);
+
+//Lấy các bộ phim của canada
+Route::get('/7.5', [Controller_movie::class, 'canada_movie']);
+
+//Lấy các bộ phim có thể loại là action
+Route::get('7.6', [Controller_movie::class, 'action_movie']);
+
+//Lấy các bộ phim có điểm bình chọn lớn hơn 8.0 và số lượt bình chọn trung bình lớn hơn 10000
+Route::get('7.7', [Controller_movie::class, 'vote_movie']);
