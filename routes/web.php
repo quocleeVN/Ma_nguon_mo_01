@@ -50,6 +50,7 @@ Route::get('/baoquoc', function () {
     return "Bao Quoc";
 });
 
+
 //Thao tác với moviedb
 
 //Lấy danh sách thể loại phim
@@ -72,3 +73,11 @@ Route::get('7.6', [Controller_movie::class, 'action_movie']);
 
 //Lấy các bộ phim có điểm bình chọn lớn hơn 8.0 và số lượt bình chọn trung bình lớn hơn 10000
 Route::get('7.7', [Controller_movie::class, 'vote_movie']);
+
+Route::get('/vananh2', function () {
+    return "Nguyen Tran Van Anh";
+});
+
+Route::get('quynhnhu', function () {
+    return 'Nguyễn Võ Quỳnh Như';
+});
