@@ -49,13 +49,14 @@ Route::get('/baoquoc', function () {
     return "Bao Quoc";
 });
 
-Route::get('/vananh2', function(){
+Route::get('/vananh2', function () {
     return "Nguyen Tran Van Anh";
 });
 
-Route::get('/quynhnhu',function(){
+Route::get('/quynhnhu', function () {
     return "Nguyễn Võ Quỳnh Như";
 });
+
 use App\Http\Controllers\MovieController;
 
 Route::prefix('movies')->group(function () {
@@ -68,7 +69,7 @@ Route::prefix('movies')->group(function () {
     Route::get('/popular-movies', [MovieController::class, 'popularMovies']);
 
 
-Route::get('quynhnhu', function(){
-    return 'Nguyễn Võ Quỳnh Như';
-
+    Route::get('quynhnhu', function () {
+        return 'Nguyễn Võ Quỳnh Như';
+    });
 });
