@@ -5,7 +5,10 @@ use App\Http\Controllers\ViDuController;
 use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 71045c12d59e7d48c4f2a605f02ba6da4a4d6d37
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,6 +57,7 @@ Route::get('/vananh', function () {
 
 Route::get('/baoquoc', function () {
     return "Bao Quoc";
+<<<<<<< HEAD
 });
 
 <<<<<<< HEAD
@@ -163,4 +167,10 @@ Route::get('quynhnhu', function () {
 Route::get('/cau8', function () {
     return "Câu 8: Trong quá trình làm bài, các thành viên không ghi đè code và mỗi người làm mỗi nhánh riêng biệt, code trên Github không thay đổi so với lúc clone về. Không có sự khác biệt về lịch sử commit, vì vậy khi push lên vẫn hợp lệ và không cần pull trước";
 });
+<<<<<<< HEAD
 >>>>>>> main
+=======
+=======
+});
+>>>>>>> 048acd01e39c3cd077d148a1116298b3f4a6cf92
+>>>>>>> 71045c12d59e7d48c4f2a605f02ba6da4a4d6d37
