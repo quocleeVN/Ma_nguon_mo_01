@@ -3,7 +3,7 @@
 use App\Http\Controllers\Controller_movie;
 use App\Http\Controllers\ViDuController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,6 +48,7 @@ Route::get('/vananh', function () {
 
 Route::get('/baoquoc', function () {
     return "Bao Quoc";
+<<<<<<< HEAD
 });
 
 
@@ -85,3 +86,6 @@ Route::get('quynhnhu', function () {
 Route::get('/cau8', function () {
     return "Câu 8: Trong quá trình làm bài, các thành viên không ghi đè code và mỗi người làm mỗi nhánh riêng biệt, code trên Github không thay đổi so với lúc clone về. Không có sự khác biệt về lịch sử commit, vì vậy khi push lên vẫn hợp lệ và không cần pull trước";
 });
+=======
+});
+>>>>>>> 048acd01e39c3cd077d148a1116298b3f4a6cf92
