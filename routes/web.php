@@ -56,6 +56,7 @@ Route::get('/baoquoc', function () {
     return "Bao Quoc";
 });
 
+<<<<<<< HEAD
 Route::get('/vananh2', function () {
     return "Nguyen Tran Van Anh";
 });
@@ -120,6 +121,8 @@ Route::get('/hotmovie', function () {
             ->get();
     return view('viewmovie.hotmovie', compact('movies'));
 });
+=======
+>>>>>>> main
 
 //Thao tác với moviedb
 
@@ -144,6 +147,20 @@ Route::get('7.6', [Controller_movie::class, 'action_movie']);
 //Lấy các bộ phim có điểm bình chọn lớn hơn 8.0 và số lượt bình chọn trung bình lớn hơn 10000
 Route::get('7.7', [Controller_movie::class, 'vote_movie']);
 
+<<<<<<< HEAD
 Route::get('/sach', [BookController::class, 'book']);
 Route::get('/sach/theloai/{id}', [BookController::class, 'theloai']);
 Route::get('/sach/chitiet/{id}', [BookController::class, 'chitiet']);
+=======
+Route::get('/vananh2', function () {
+    return "Nguyen Tran Van Anh";
+});
+
+Route::get('quynhnhu', function () {
+    return 'Nguyễn Võ Quỳnh Như';
+});
+
+Route::get('/cau8', function () {
+    return "Câu 8: Trong quá trình làm bài, các thành viên không ghi đè code và mỗi người làm mỗi nhánh riêng biệt, code trên Github không thay đổi so với lúc clone về. Không có sự khác biệt về lịch sử commit, vì vậy khi push lên vẫn hợp lệ và không cần pull trước";
+});
+>>>>>>> main
