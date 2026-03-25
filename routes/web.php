@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller_movie;
 use App\Http\Controllers\ViDuController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
@@ -48,32 +49,3 @@ Route::get('/vananh', function () {
 Route::get('/baoquoc', function () {
     return "Bao Quoc";
 });
-
-Route::get('/vananh2', function () {
-    return "Nguyen Tran Van Anh";
-});
-
-Route::get('/quynhnhu', function () {
-    return "Nguyễn Võ Quỳnh Như";
-});
-
-use App\Http\Controllers\MovieController;
-
-Route::prefix('movies')->group(function () {
-    Route::get('/genres', [MovieController::class, 'genres']);
-    Route::get('/top-rated', [MovieController::class, 'topRated']);
-    Route::get('/top-budget', [MovieController::class, 'topBudget']);
-    Route::get('/long-movies', [MovieController::class, 'longMovies']);
-    Route::get('/canada-movies', [MovieController::class, 'canadaMovies']);
-    Route::get('/action-movies', [MovieController::class, 'actionMovies']);
-    Route::get('/popular-movies', [MovieController::class, 'popularMovies']);
-
-});
-Route::get('/cau8',function(){
-    return "Câu 8: Trong quá trình làm bài, các thành viên không ghi đè code và mỗi người làm mỗi nhánh riêng biệt, code trên Github không thay đổi so với lúc clone về. Không có sự khác biệt về lịch sử commit, vì vậy khi push lên vẫn hợp lệ và không cần pull trước";
-});
-
-
-
-
-
