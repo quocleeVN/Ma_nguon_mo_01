@@ -67,16 +67,13 @@ Route::prefix('movies')->group(function () {
     Route::get('/canada-movies', [MovieController::class, 'canadaMovies']);
     Route::get('/action-movies', [MovieController::class, 'actionMovies']);
     Route::get('/popular-movies', [MovieController::class, 'popularMovies']);
-<<<<<<< HEAD
+
 });
 Route::get('/cau8',function(){
     return "Câu 8: Trong quá trình làm bài, các thành viên không ghi đè code và mỗi người làm mỗi nhánh riêng biệt, code trên Github không thay đổi so với lúc clone về. Không có sự khác biệt về lịch sử commit, vì vậy khi push lên vẫn hợp lệ và không cần pull trước";
 });
-=======
 
 
-    Route::get('quynhnhu', function () {
-        return 'Nguyễn Võ Quỳnh Như';
-    });
-});
->>>>>>> 0e0eb7c0e2db605b9354c32f34ec15619fed3575
+
+
+
