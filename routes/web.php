@@ -54,5 +54,6 @@ Route::get('/baoquoc', function () {
 
 
 
-Route::get('/sach/chitiet/{id}', [BookController::class, 'chitiet'])->name('book.detail');
+
 Route::get('/sach/chitiet/{id}', [ChiTietSachController::class, 'show'])->name('book.detail');
+
