@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller_movie;
 use App\Http\Controllers\ViDuController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\ChiTietSachController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
